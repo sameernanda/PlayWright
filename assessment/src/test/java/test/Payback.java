@@ -2,7 +2,6 @@ package test;
 
 import java.nio.file.Paths;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
@@ -17,6 +16,11 @@ import testdata.UserInfo;
 import utils.Constants;
 import utils.commonUtils;
 
+/**
+ * 
+ * @author samirananda
+ * This class refers to all the assessment related tests to be run.
+ */
 public class Payback extends Setup{
 	public Page page;
 	public commonUtils utils = new commonUtils();
@@ -74,6 +78,9 @@ public class Payback extends Setup{
 		Setup.terminateSession();
 	}
 	
+	/**
+	 * This method will verify all UI Error on the registration form
+	 */
 	public void verifyUIError() {
 		utils.assertWebText(page, po.anredeFieldError, Constants.salutationFieldError);
 		utils.assertWebText(page, po.vornameFieldError, Constants.firstNameFieldError);
@@ -85,7 +92,9 @@ public class Payback extends Setup{
 		utils.assertWebText(page, po.ortFieldError, Constants.cityFieldError);
 	}
 	
-	
+	/**
+	 * This method will fill out all the details on the registration form
+	 */
 	public void fillFormData() {
 		utils.selectDropdown(page, po.salutation, "2");
 		utils.filldata(page, po.firstName, "Pay");

@@ -5,6 +5,11 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 
+/**
+ * 
+ * @author samirananda
+ * Refers to Base class to initialize Browser/Page with different launch option and with option headless or browser mode. 
+ */
 public class Setup {
 	static Browser browser = null ;
 	public static Page setupSession(String launchType, String browserName) {

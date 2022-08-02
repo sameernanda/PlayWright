@@ -4,6 +4,11 @@ import org.testng.Assert;
 
 import com.microsoft.playwright.Page;
 
+/**
+ * 
+ * @author samirananda
+ * This class refers to all the common operations that can be applied to the whole UI framework.
+ */
 public class commonUtils {
 	public void click(Page page, String WebElement) {
 		page.click(WebElement);

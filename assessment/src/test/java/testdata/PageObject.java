@@ -1,5 +1,11 @@
 package testdata;
 
+/**
+ * 
+ * @author samirananda
+ * This is Object Repository class containing all the Web Elements
+ *
+ */
 public class PageObject {
 	public String cookieAccept = "//button[@id='onetrust-accept-btn-handler']";
 	public String register = "//div[contains(text(),'Anmelden')]";
