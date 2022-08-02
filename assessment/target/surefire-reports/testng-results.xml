@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Payback Suite" duration-ms="35116" started-at="2022-08-02T07:50:23Z" finished-at="2022-08-02T07:50:58Z">
+    <groups>
+    </groups>
+    <test name="Test Basics 1" duration-ms="35116" started-at="2022-08-02T07:50:23Z" finished-at="2022-08-02T07:50:58Z">
+      <class name="test.Payback">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:test.Payback@3f0ee7cb]" name="beforeTest" is-config="true" duration-ms="4150" started-at="2022-08-02T13:20:23Z" finished-at="2022-08-02T13:20:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[head]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testApp()[pri:0, instance:test.Payback@3f0ee7cb]" name="testApp" duration-ms="30778" started-at="2022-08-02T13:20:27Z" finished-at="2022-08-02T13:20:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.Payback@3f0ee7cb]" name="afterTest" is-config="true" duration-ms="167" started-at="2022-08-02T13:20:57Z" finished-at="2022-08-02T13:20:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.Payback -->
+    </test> <!-- Test Basics 1 -->
+  </suite> <!-- Payback Suite -->
+</testng-results>

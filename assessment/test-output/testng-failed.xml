@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Payback Suite]">
+  <test thread-count="5" name="Test Basics 1(failed)">
+    <parameter name="browser" value="chromium"/>
+    <parameter name="type" value="head"/>
+    <classes>
+      <class name="test.Payback">
+        <methods>
+          <include name="testApp"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.Payback -->
+    </classes>
+  </test> <!-- Test Basics 1(failed) -->
+</suite> <!-- Failed suite [Payback Suite] -->
