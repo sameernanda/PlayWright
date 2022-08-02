@@ -17,6 +17,9 @@ Playwright Tool implementation with Maven and TestNG
 
 ### FAQ
 
+- **Q:** What does ```mvn clean test``` does ?
+- **A:** when ```clean``` is passed along with ```test```, it will remove **test-output** and **target** folder before running tests.
+
 - **Q:** How to run tests on different browser without hardcoding?
 - **A:** By default the tests are run with chromium browser
   To run tests on different browser, you can pass the parameter as shown in the TestNg.xml file as a **parameter**.
@@ -32,3 +35,10 @@ Playwright Tool implementation with Maven and TestNG
   ```<parameter name = "type" value="head"/>```
 
 Refer [Run single test](https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html) for more details
+
+- **Q:** Wher does the screenshots get saved?
+- **A:** By default the screenshots get saved at project level.
+  If you want to store them ata a particulr location then you need to provide the full path for the image file.
+
+  eg.
+  ```<parameter name = "browser" value="safari"/>```
