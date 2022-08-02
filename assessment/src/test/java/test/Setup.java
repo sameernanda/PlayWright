@@ -1,8 +1,10 @@
 package test;
 
 import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.Tracing;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 
 /**
@@ -12,11 +14,16 @@ import com.microsoft.playwright.BrowserType.LaunchOptions;
  */
 public class Setup {
 	static Browser browser = null ;
+	static Playwright playwright =null;
 	public static Page setupSession(String launchType, String browserName) {
 		LaunchOptions lo = new LaunchOptions();
-		Playwright playwright = Playwright.create();
+		playwright = Playwright.create();
+
 		if(launchType.equalsIgnoreCase("head")) {
 			lo.headless= false;
+			lo.slowMo = (double) 1000;
+		}else {
+			lo.headless= true;
 			lo.slowMo = (double) 1000;
 		}
 		
@@ -33,13 +40,14 @@ public class Setup {
 		default:
 			System.out.println("No Browser...");
 		}
-		
-		Page page = browser.newPage();
+		BrowserContext context = browser.newContext();
+		Page page = context.newPage();
 		return page;
 	}
 	
 	public static void terminateSession() {
 		browser.close();
+		playwright.close();
 	}
 
 }

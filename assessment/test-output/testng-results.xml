@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Payback Suite" duration-ms="66668" started-at="2022-08-02T12:53:19 IST" finished-at="2022-08-02T12:54:25 IST">
+  <suite name="Payback Suite" duration-ms="34770" started-at="2022-08-02T22:28:52 IST" finished-at="2022-08-02T22:29:27 IST">
     <groups>
     </groups>
-    <test name="Test Basics 1" duration-ms="66668" started-at="2022-08-02T12:53:19 IST" finished-at="2022-08-02T12:54:25 IST">
+    <test name="Test Basics 1" duration-ms="34770" started-at="2022-08-02T22:28:52 IST" finished-at="2022-08-02T22:29:27 IST">
       <class name="test.Payback">
-        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:test.Payback@52feb982]" name="beforeTest" is-config="true" duration-ms="4921" started-at="2022-08-02T12:53:19 IST" finished-at="2022-08-02T12:53:24 IST">
+        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:test.Payback@52feb982]" name="beforeTest" is-config="true" duration-ms="5201" started-at="2022-08-02T22:28:52 IST" finished-at="2022-08-02T22:28:58 IST">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testApp()[pri:0, instance:test.Payback@52feb982]" name="testApp" duration-ms="61487" started-at="2022-08-02T12:53:24 IST" finished-at="2022-08-02T12:54:25 IST">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:test.Payback@52feb982]" name="testApp" duration-ms="29312" started-at="2022-08-02T22:28:58 IST" finished-at="2022-08-02T22:29:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.Payback@52feb982]" name="afterTest" is-config="true" duration-ms="157" started-at="2022-08-02T12:54:25 IST" finished-at="2022-08-02T12:54:25 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.Payback@52feb982]" name="afterTest" is-config="true" duration-ms="173" started-at="2022-08-02T22:29:27 IST" finished-at="2022-08-02T22:29:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

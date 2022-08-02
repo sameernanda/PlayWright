@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.LoadState;
 
 import testdata.PageObject;
 import testdata.UserInfo;
@@ -38,9 +39,9 @@ public class Payback extends Setup{
 		utils.click(page, po.cookieAccept);
 		utils.assertText(page.title(),Constants.homePageTiltle);
 		utils.click(page, po.register);
-		
 		utils.assertWebText(page, po.registerPageHeadingText, Constants.registerPageHeading);
 		utils.clickCheckbox(page, po.registePageradioButton);
+
 		while(!page.isVisible(po.burgerKingCardPicker)) {
 			utils.click(page, po.slider);
 		}
@@ -52,7 +53,6 @@ public class Payback extends Setup{
 		//Verify Email field validation
 		utils.assertWebText(page, po.emailFieldError, Constants.emailFieldValidation);
 		//Verify password field validation
-		utils.click(page, po.emailField);
 		utils.assertWebText(page, po.emailFieldError, Constants.emailFieldValidation);
 		
 		utils.filldata(page, po.emailField, UserInfo.getEmail());
